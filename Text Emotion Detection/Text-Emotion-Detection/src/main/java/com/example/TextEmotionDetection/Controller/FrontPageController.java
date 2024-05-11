@@ -69,7 +69,7 @@ public class FrontPageController {
 				if (savedUser != null) {
 					session.setAttribute("msg", "Registration successful. Please sign in.");
 					session.removeAttribute("msgError");
-					return "redirect:/signin";
+					return "redirect:/signup";
 				} else {
 					session.setAttribute("msgError", "Something went wrong on the server.");
 					session.removeAttribute("msg");

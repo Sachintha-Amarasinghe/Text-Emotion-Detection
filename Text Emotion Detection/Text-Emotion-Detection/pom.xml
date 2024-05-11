@@ -61,6 +61,17 @@
 				<groupId>org.springframework.boot</groupId>
 				<artifactId>spring-boot-maven-plugin</artifactId>
 			</plugin>
+			<plugin> 
+    <groupId>org.jacoco</groupId>
+    <artifactId>jacoco-maven-plugin</artifactId>
+    <configuration>
+        <excludes>
+            <exclude>com/gainjavaknowledge/**/ExcludedPOJO.class</exclude>
+            <exclude>com/gainjavaknowledge/**/*DTO.*</exclude>
+            <exclude>**/config/*</exclude>
+        </excludes>
+     </configuration>
+</plugin>
 		</plugins>
 	</build>
 
